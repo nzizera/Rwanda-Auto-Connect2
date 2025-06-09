@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda Auto Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 1.5em;
+    color: #007bff; /* Example primary color */
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo a {
+            font-size: 1.5em;
+            color: #007bff; /* Example primary color */
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap; /* Prevent logo text from wrapping */
+        }
+
+        /* NEW: Style for the logo image to make it smaller */
+        .logo img {
+            max-height: 50px; /* Adjust this value to make the logo smaller or larger */
+            max-width: 150px; /* Adjust this value to control logo width */
+            height: auto; /* Maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensures the entire image fits within the bounds */
+        }
+
+.header-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-actions a {
+    text-decoration: none;
+    color: #555;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.header-actions a:hover {
+    background-color: #eee;
+}
+
+.header-actions .seller-login {
+    background-color: #28a745; /* Example seller color */
+    color: white;
+}
+
+.header-actions .seller-login:hover {
+    background-color: #1e7e34;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-bar input[type="text"],
+.search-bar select,
+.search-bar input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured-cars {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.car-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.car-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.car-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.car-item a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #28a745; /* Example secondary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.categories {
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.category-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-list img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.why-choose-us {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.reason {
+    text-align: center;
+    width: 300px;
+}
+
+.reason img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="Gemini_Generated_Image_l1wrayl1wrayl1wr.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-actions">
+            <a href="#">Buyer Login</a>
+            <a href="#">Buyer Sign Up</a>
+            <a href="#" class="seller-login">Seller Login</a>
+            <a href="#">Seller Sign Up</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Find Your Dream Car in Rwanda...">
+            <select name="make">
+                <option value="">All Makes</option>
+            </select>
+            <select name="model">
+                <option value="">All Models</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="featured-cars">
+        <h2>Featured Cars</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="colora.jpeg" alt="Car 1">
+                <h3>Toyota Corolla</h3>
+                <p>Price: RWF 8,000,000</p>
+                <a href="car-details.html">View Details</a>
+            </div>
+            <div class="car-item">
+                <img src="nissan.jpeg" alt="Car 2">
+                <h3>Nissan Navara</h3>
+                <p>Price: RWF 15,000,000</p>
+                <a href="car-details.html">View Details</a>
+            </div>
+            <div class="car-item">
+                <img src="Gemini_Generated_Image_f4bbejf4bbejf4bb.png" alt="Car 3">
+                <h3>Volkswagen Golf</h3>
+                <p>Price: RWF 10,500,000</p>
+                <a href="car-details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Browse by Category</h2>
+        <div class="category-list">
+            <a href="#">
+                <img src="sedan2.png" alt="Sedans">
+                <p>Sedans</p>
+            </a>
+            <a href="#">
+                <img src="automoblie.png" alt="SUVs">
+                <p>SUVs</p>
+            </a>
+            <a href="#">
+                <img src="truck.png" alt="Trucks">
+                <p>Trucks</p>
+            </a>
+            <a href="#">
+                <img src="moto.png" alt="Motorcycles">
+                <p>Motorcycles</p>
+            </a>
+            <a href="#">
+                <img src="van (1).png" alt="Vans">
+                <p>Vans</p>
+            </a>
+            <a href="#">
+                <img src="new-car.png" alt="New Cars">
+                <p>New Cars</p>
+            </a>
+            <a href="#">
+                <img src="all (1).png" alt="All categories">
+                <p>All Categories</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <img src="choice_5592660.png" alt="Wide Selection">
+                <h3>Wide Selection</h3>
+                <p>Browse a diverse range of vehicles from across Rwanda.</p>
+            </div>
+            <div class="reason">
+                <img src="crosshair_6107365.png" alt="Local Focus">
+                <h3>Local Focus</h3>
+                <p>Find cars listed in your region and connect with local sellers.</p>
+            </div>
+            <div class="reason">
+                <img src="effective-communication_16743893.png" alt="Easy Communication">
+                <h3>Easy Communication</h3>
+                <p>Contact sellers directly through our platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Seller Login</a>
+        </nav>
+        <p>&copy; 2025 Rwanda Auto Connect</p>
+    </footer>
+
+</body>
+</html>
